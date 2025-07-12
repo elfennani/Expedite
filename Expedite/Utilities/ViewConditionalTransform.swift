@@ -1,3 +1,12 @@
+//
+//  ViewConditionalTransform.swift
+//  Expedite
+//
+//  Created by Nizar Elfennani on 12/7/2025.
+//
+
+import SwiftUI
+
 extension View {
     @ViewBuilder
     func `if`<Content: View>(

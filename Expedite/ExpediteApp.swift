@@ -8,6 +8,21 @@
 import SwiftUI
 import SwiftData
 
+extension View {
+    public static func semiOpaqueWindow() -> some View {
+        VisualEffect().ignoresSafeArea()
+    }
+}
+
+struct VisualEffect : NSViewRepresentable {
+    func makeNSView(context: Context) -> NSView {
+        let view = NSVisualEffectView()
+        view.state = .active
+        return view
+    }
+    func updateNSView(_ view: NSView, context: Context) { }
+}
+
 @main
 struct ExpediteApp: App {
     var sharedModelContainer: ModelContainer = {
@@ -24,8 +39,18 @@ struct ExpediteApp: App {
     }()
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Window("Expedite", id: "main") {
+            if #available(macOS 15.0, *) {
+                ContentView().containerBackground(.thinMaterial, for: .window)
+                    .toolbarBackgroundVisibility(.hidden, for: .windowToolbar)
+            } else {
+                ZStack {
+                    Rectangle
+                        .semiOpaqueWindow()
+                    
+                    ContentView()
+                }
+            }
         }
         .modelContainer(sharedModelContainer)
     }
