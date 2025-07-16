@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D925263B2E20509700F3D39A /* AsyncDNSResolver in Frameworks */ = {isa = PBXBuildFile; productRef = D925263A2E20509700F3D39A /* AsyncDNSResolver */; };
+		D9A5D23E2E2311AC00E87116 /* CertificateSigningRequest in Frameworks */ = {isa = PBXBuildFile; productRef = D9A5D23D2E2311AC00E87116 /* CertificateSigningRequest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A5D23E2E2311AC00E87116 /* CertificateSigningRequest in Frameworks */,
 				D925263B2E20509700F3D39A /* AsyncDNSResolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +129,7 @@
 			name = Expedite;
 			packageProductDependencies = (
 				D925263A2E20509700F3D39A /* AsyncDNSResolver */,
+				D9A5D23D2E2311AC00E87116 /* CertificateSigningRequest */,
 			);
 			productName = Expedite;
 			productReference = D92526092E204F9200F3D39A /* Expedite.app */;
@@ -212,6 +215,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				D92526362E204FF300F3D39A /* XCRemoteSwiftPackageReference "swift-async-dns-resolver" */,
+				D9A5D23C2E2311AC00E87116 /* XCRemoteSwiftPackageReference "CertificateSigningRequest" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D925260A2E204F9200F3D39A /* Products */;
@@ -415,6 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Expedite/Expedite.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -441,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Expedite/Expedite.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -575,6 +581,14 @@
 				minimumVersion = 0.4.0;
 			};
 		};
+		D9A5D23C2E2311AC00E87116 /* XCRemoteSwiftPackageReference "CertificateSigningRequest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cbaker6/CertificateSigningRequest.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.30.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -587,6 +601,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D92526362E204FF300F3D39A /* XCRemoteSwiftPackageReference "swift-async-dns-resolver" */;
 			productName = AsyncDNSResolver;
+		};
+		D9A5D23D2E2311AC00E87116 /* CertificateSigningRequest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9A5D23C2E2311AC00E87116 /* XCRemoteSwiftPackageReference "CertificateSigningRequest" */;
+			productName = CertificateSigningRequest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -27,7 +27,7 @@ struct VisualEffect : NSViewRepresentable {
 struct ExpediteApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            PairedDevice.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

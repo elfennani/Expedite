@@ -68,5 +68,5 @@ struct DeviceCard: View {
 }
 
 #Preview {
-    DeviceCard(device: Device(name: "Elfennani's Galaxy A54", model: "SM-A545F"))
+    DeviceCard(device: Device(name: "Elfennani's Galaxy A54", model: "SM-A545F", host: .url(URL(string: "")!)))
 }

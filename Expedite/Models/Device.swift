@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import Network
 
 struct Device: Identifiable, Equatable{
     let id: UUID = UUID()
     let name: String
     let model: String
+    let host: NWEndpoint
 }

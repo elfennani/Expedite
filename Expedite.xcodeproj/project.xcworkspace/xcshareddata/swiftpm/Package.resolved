@@ -1,6 +1,15 @@
 {
-  "originHash" : "dca0bd4aae994bff27b7e2bbd5d629fb5cd1dcca22ebb5eac0672647e4ffb379",
+  "originHash" : "bd17228fc28890f4fee5c02015487a6e3c5efda9acd9477249e23d4ccab43f12",
   "pins" : [
+    {
+      "identity" : "certificatesigningrequest",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cbaker6/CertificateSigningRequest.git",
+      "state" : {
+        "revision" : "457627f8ff57a721851ee14cc552d529c37c8329",
+        "version" : "1.30.0"
+      }
+    },
     {
       "identity" : "swift-async-dns-resolver",
       "kind" : "remoteSourceControl",
